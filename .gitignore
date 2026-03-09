@@ -1,0 +1,28 @@
+# 通用
+.DS_Store
+Thumbs.db
+*.log
+
+# Node.js / 前端常見
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+dist/
+build/
+.vite/
+coverage/
+*.lock  # 如果你不想提交 yarn.lock / package-lock.json 可加這行（通常建議提交）
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# JetBrains / VSCode
+.idea/
+.vscode/

@@ -1,11 +1,14 @@
 <script setup lang="ts"></script>
+import { RouterView } from 'vue-router'
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header>
+    <nav v-if="$route.path !== '/login'">
+      <RouterLink to="/index">首页</RouterLink>
+    </nav>
+  </header>
+
+  <RouterView /> 
 </template>
 
 <style scoped></style>
